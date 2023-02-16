@@ -5,28 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Style/style.css" />
+
+    <!-- CSS owl corousel  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- cdn font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!--Navbar  -->
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="" alt="" /></a>
+        <a class="navbar-brand" href="#"><img src="https://yehezkiel.netlify.app/src/sema.png" alt="" class="size-logo" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Events</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Merchandise</a>
-            <a class="nav-link" href="#">Aspiration Form</a>
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link active ms-2 me-2" aria-current="page" href="#">Home</a>
+            <a class="nav-link me-2" href="#">Events</a>
+            <a class="nav-link me-2" href="#">About Us</a>
+            <a class="nav-link me-2" href="#">Merchandise</a>
+            <a class="nav-link me-2" href="#">Aspiration Form</a>
+            <a class="nav-link" href="contactus.html">Contact Us</a>
           </div>
         </div>
       </div>
@@ -35,49 +54,216 @@
     <!-- akhir Navbar -->
 
     <!-- Hero -->
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="https://e0.pxfuel.com/wallpapers/230/630/desktop-wallpaper-anime-aesthetic-pc-anime-aesthetic-pc-background-on-bat-retro-anime-aesthetic.jpg" class="d-block w-100" alt="..." />
+
+    <section class="mb-5">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="https://cdn.wallpapersafari.com/52/98/5oPLsu.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img src="https://i.pinimg.com/564x/1e/25/b7/1e25b79c58352cb2eb6be56c17e58cf2.jpg" class="d-block w-100" id="hero" alt="..." /></div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/564x/ba/92/96/ba92968f6f361bfdd8dca4b7bdcba4b8.jpg" class="d-block w-100" id="hero" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/564x/3b/19/31/3b1931b9c680da1e831bf779531266c0.jpg" class="d-block w-100" id="hero" alt="..." />
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="https://i.pinimg.com/736x/5e/2d/5b/5e2d5b39ac6010ce23604a4fa65d6a8e.jpg" class="d-block w-100" alt="..." />
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    </section>
 
     <!-- Akhir Hero -->
 
     <!-- Introduction -->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-
-                </div>
-            </div>
+    <section class="mb-5 mt-5 pt-3 introduction">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md my-4">
+            <h2 class="">Introduction</h2>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cupiditate laudantium ipsa, suscipit autem, nemo nobis doloribus deserunt deleniti explicabo id fugiat quas perferendis, porro quod? Iste facilis odit at! Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Eveniet veniam natus deleniti! Officiis sequi, officia illum doloribus eveniet eaque soluta illo voluptatibus quaerat asperiores accusantium dolor totam debitis veniam impedit.
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Akhir Introduction -->
 
     <!-- Gallery -->
-    <div class="section">
-        
-    </div>
+    <section class="my-5 mx-5">
+      <div class="container title-size">
+        <h2 class="text-center">Gallery</h2>
+        <hr />
+      </div>
+      <div class="owl-carousel owl-carousel2">
+        <div class="ms-2 me-2"><img src="https://i.pinimg.com/564x/1e/25/b7/1e25b79c58352cb2eb6be56c17e58cf2.jpg" /></div>
+        <div class="ms-2 me-2"><img src="https://i.pinimg.com/564x/1e/25/b7/1e25b79c58352cb2eb6be56c17e58cf2.jpg" /></div>
+        <div class="ms-2 me-2"><img src="https://i.pinimg.com/564x/1e/25/b7/1e25b79c58352cb2eb6be56c17e58cf2.jpg" /></div>
+        <div class="ms-2 me-2"><img src="https://i.pinimg.com/564x/1e/25/b7/1e25b79c58352cb2eb6be56c17e58cf2.jpg" /></div>
+        <div class="ms-2 me-2"><img src="https://i.pinimg.com/564x/1e/25/b7/1e25b79c58352cb2eb6be56c17e58cf2.jpg" /></div>
+        <div class="ms-2 me-2"><img src="https://i.pinimg.com/564x/1e/25/b7/1e25b79c58352cb2eb6be56c17e58cf2.jpg" /></div>
+        <div class="ms-2 me-2"><img src="https://i.pinimg.com/564x/1e/25/b7/1e25b79c58352cb2eb6be56c17e58cf2.jpg" /></div>
+      </div>
+      <div>
+        <div class="slider_nav">
+          <button class="am-next">Next</button>
+          <button class="am-prev">Previous</button>
+        </div>
+      </div>
+    </section>
     <!-- Akhir Gallery -->
+
+    <!--  Video Profile  -->
+    <section class="my-5">
+      <div class="container text-center">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-5 my-auto">
+            <h2 class="">No Limit No Boundaries</h2>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quam magnam blanditiis perspiciatis sapiente enim animi laboriosam recusandae quod distinctio? Reprehenderit temporibus modi eveniet eligendi ad nam, inventore
+            aspernatur dolor.
+          </div>
+          <div class="col-md-5">
+            <iframe src="https://www.youtube.com/embed/gzeIjmhi3oM" frameborder="0" class="iframe-profile"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Video Profile -->
+
+    <!-- Articles -->
+    <section>
+      <div class="container title-size">
+        <h2 class="text-center">Articles</h2>
+        <hr />
+      </div>
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 d-flex justify-content-end">
+              <!-- Card 1 -->
+              <div class="card mb-3" style="max-width: 540px">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="..." class="img-fluid rounded-start" alt="..." />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Akhir Card 1 -->
+            <div class="col-md-6 d-flex justify-content-center">
+              <!-- Card 2 -->
+              <div class="card mb-3 d-flex">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <!-- Akhir Card 2 -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 d-flex justify-content-end">
+              <!-- Card 1 -->
+              <div class="card mb-3" style="max-width: 540px">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="..." class="img-fluid rounded-start" alt="..." />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Akhir Card 1 -->
+            <div class="col-md-6 d-flex">
+              <!-- Card 2 -->
+              <div class="card mb-3 d-flex">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <!-- Akhir Card 2 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Articles -->
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <footer class="text-center text-lg-start bg-dark">
+        <div class="container d-flex justify-content-center py-4">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 rounded-circle circle-size">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 rounded-circle circle-size">
+            <i class="fa-brands fa-youtube icon-youtube"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 rounded-circle circle-size">
+            <i class="fab fa-instagram"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 rounded-circle circle-size">
+            <i class="fab fa-twitter"></i>
+          </button>
+        </div>
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2)">Copyright © 2023 Senat Mahasiswa Fakultas IT Maranatha.</div>
+      </footer>
+    </div>
+    <!-- Akhir Footer -->
 
     <!-- JS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Owl Corousel-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- JS -->
+    <script src="JS/corousel.js"></script>
   </body>
 </html>

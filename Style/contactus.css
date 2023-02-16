@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+i {
+    font-size: 5rem;
+}
+
+
+/*************************************/
+/* Navigasi */
+/*************************************/
+
+nav ul li:not(:last-child) {
+  margin-right: 50px;
+}
+
+
