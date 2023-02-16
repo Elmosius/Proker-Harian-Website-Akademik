@@ -13,12 +13,29 @@ section {
 /* Navigasi */
 /*************************************/
 
-nav ul li:not(:last-child) {
-  margin-right: 50px;
+.nav-link,
+.nav-link:visited {
+  /* font-size: 1.2em; */
+  font-weight: 500;
+  color: black !important;
 }
 
-.size-logo {
-  width: 75px;
+.nav-link:hover {
+  font-size: 1.05em;
+  color: #1AAE9F !important;
+}
+
+.nav-link::after {
+  display: block;
+  content: '';
+  border-bottom: 2px solid #1AAE9F;
+  transform: scaleX(0);
+  transition: transform 500ms cubic-bezier(1, 0.19, 0, 0.86);
+  transform-origin: left;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
 }
 
 /*************************************/
@@ -40,6 +57,87 @@ section.introduction {
 /*************************************/
 /* Gallery */
 /*************************************/
+.container01 {
+position: relative;
+}
+
+/* Hide the images by default */
+.mySlides01 {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor01 {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev01,
+.next01 {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next01 {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev01:hover,
+.next01:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext01 {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container01 {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+}
+
+.row01:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column01 {
+float: left;
+width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo01 {
+opacity: 0.6;
+}
+
+.active01,
+.demo01:hover {
+opacity: 1;
+}
 
 /*************************************/
 /* Video Profile */

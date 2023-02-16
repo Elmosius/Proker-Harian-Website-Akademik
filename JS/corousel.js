@@ -55,3 +55,4 @@ $(".owl-carousel2").owlCarousel({
 //   nav: true,
 //   navText: ["<img src='myprevimage.png'>","<img src='mynextimage.png'>"]
 // });
+
