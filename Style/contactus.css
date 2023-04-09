@@ -6,16 +6,47 @@
 }
 
 i {
-    font-size: 5rem;
+  font-size: 5rem;
 }
-
 
 /*************************************/
 /* Navigasi */
 /*************************************/
 
-nav ul li:not(:last-child) {
-  margin-right: 50px;
+.nav-link,
+.nav-link:visited {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: black !important;
 }
 
+.nav-link:hover {
+  color: #1aae9f !important;
+}
 
+.nav-link::after {
+  display: block;
+  content: "";
+  border-bottom: 2px solid #1aae9f;
+  transform: scaleX(0);
+  transition: transform 500ms cubic-bezier(1, 0.19, 0, 0.86);
+  transform-origin: left;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/*************************************/
+/* Hero */
+/*************************************/
+
+.vl {
+  border-left: 2px solid black;
+  height: 500px;
+}
+
+.card {
+  width: 550px;
+  height: 500px;
+}
