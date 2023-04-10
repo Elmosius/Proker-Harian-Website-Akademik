@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Semafit</title>
+    <title>SEMAFIT Maranatha</title>
 
     <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
@@ -12,7 +12,7 @@
     <!-- CSS -->
     <link
       rel="stylesheet"
-      href="Style/contactus.css
+      href="Style/aspirationform.css
     "
     />
 
@@ -73,63 +73,84 @@
     <!-- Form -->
     <section>
       <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <h4 class="my-4">ASPIRATION FORM</h4>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-8">
+            <h1 class="my-4">ASPIRATION FORM</h1>
+
+            <form name="aspirationform" id="myForm">
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label fw-bold">Name</label>
+                    <input type="text" name="Nama" class="form-control" id="exampleFormControlInput1" placeholder="Insert your name" />
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label fw-bold">Email Address</label>
+                    <input type="email" name="Email" class="form-control" id="exampleFormControlInput1" placeholder="Insert your Maranatha email" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label fw-bold">NRP</label>
+                    <input type="text" name="NRP" class="form-control" id="exampleFormControlInput1" placeholder="Insert NRP" />
+                  </div>
+                </div>
+
+                <div class="col">
+                  <label for="exampleFormControlInput1" class="form-label fw-bold">To Division</label>
+                  <select name="Divisi" class="form-select" aria-label="Default select example">
+                    <option value="Seluruh Divisi" selected>Seluruh Divisi</option>
+                    <option value="BPH">BPH</option>
+                    <option value="Humas">Hubungan Masyarakat</option>
+                    <option value="Danus">Dana Usaha</option>
+                    <option value="Akademik">Akademik</option>
+                    <option value="Non-Akademik">Non-Akademmik</option>
+                    <option value="Multimedia">Multimedia</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label fw-bold">Subject</label>
+                    <input name="Subjek" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Insert Subject" required />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label fw-bold">Message</label>
+                    <textarea name="Pesan" class="form-control" id="exampleFormControlTextarea1" rows="6" required></textarea>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn warnabtn w-100">Submit</button>
+            </form>
           </div>
         </div>
-
-        <form action="">
-          <div class="row">
-            <div class="col">
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label fw-bold">Name</label>
-                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Inser your name" />
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label fw-bold">Email Address </label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Insert you Email" />
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col">
-              <label for="exampleFormControlInput1" class="form-label fw-bold">To Division</label>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">BPH</option>
-                <option value="2">Humas</option>
-                <option value="3">Danus</option>
-                <option value="4">Akademik</option>
-                <option value="5">Non-Akademmik</option>
-                <option value="5">Multimedia</option>
-              </select>
-            </div>
-
-            <div class="col">
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label fw-bold">Subject</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col">
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label fw-bold">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-              </div>
-            </div>
-          </div>
-        </form>
       </div>
     </section>
     <!-- akhir Form -->
+
+    <!-- Aspiration Modal -->
+    <div class="modal fade" id="contact-thx" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img class="contact-modal-thx" src="Images/trims.png" />
+            <h4 class="contact-modal-h4 text-center">Aspirasi anda telah diterima oleh sistem. Tuhan Memberkati</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-success btn-lg w-100" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Aspiration Modal -->
 
     <!-- JS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
@@ -153,5 +174,21 @@
     <!-- JS -->
     <script src="JS/corousel.js"></script>
     <script src="JS/main.js"></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbz4WSmlX3gxYeeJUZLRxMJImJFQ_PFk0IXP8hJ_AYY_sXghZ5z4gGTchqW6Xf93jKMnhw/exec';
+      const form = document.forms['aspirationform'];
+      $('#myForm').on('submit', function (e) {
+        e.preventDefault();
+        $('#contact-thx').modal('show');
+      });
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => console.log('Success!', response))
+          .catch((error) => console.error('Error!', error.message));
+        form.reset();
+      });
+    </script>
   </body>
 </html>
